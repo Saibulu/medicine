@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block banner_slider %}
+<!-- Carousel Banner Section -->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'images/banner/chem2.jpeg' %}" class="d-block w-100" alt="Banner 1">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/banner/chem3.jpeg' %}" class="d-block w-100" alt="Banner 2">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/banner/chem4.jpeg' %}" class="d-block w-100" alt="Banner 3">
+        </div>
+    </div>
+</div>
+{% endblock banner_slider %}
+
+{% block maincontent %}
+
+<!-- Chemist Products Section -->
+<div class="container">
+    <h2 class="text-center mb-4">Chemist Products</h2>
+    <div class="row g-4">
+        <!-- Product 1 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="huduma text-center">
+                <a href="#">
+                    <img src="{% static 'images/product/prod1.jpeg' %}" class="img-fluid" alt="Parasitamo">
+                    <p class="dukapro mt-2">Parasitamo</p>
+                </a>
+            </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="huduma text-center">
+                <a href="#">
+                    <img src="{% static 'images/product/prod2.jpeg' %}" class="img-fluid" alt="Diplophena">
+                    <p class="dukapro mt-2">Diplophena</p>
+                </a>
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="huduma text-center">
+                <a href="#">
+                    <img src="{% static 'images/product/prod3.jpeg' %}" class="img-fluid" alt="Kaluma">
+                    <p class="dukapro mt-2">Kaluma</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock maincontent %}
